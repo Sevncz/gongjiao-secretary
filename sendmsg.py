@@ -8,10 +8,10 @@ import yagmail
 from twilio.rest import Client
 
 
-yag = yagmail.SMTP(user='272445293@qq.com', password='ljnvwajcnfajbigi', host='smtp.qq.com', port='465')
+yag = yagmail.SMTP(user='xxx@qq.com', password='ljnvwajcnfajbigi', host='smtp.qq.com', port='465')
 
 def send_email(msg):
-    yag.send(to='wen0112@live.com', subject='到站咯', contents=[msg])
+    yag.send(to='xxx@live.com', subject='到站咯', contents=[msg])
     print("已发送邮件")
 
 
@@ -20,8 +20,8 @@ auth_token='f436aaa51a476c234897497500553719'
 
 client = Client(account_sid, auth_token)
 
-my_number='+8618600753024'
-twilio_number='+12672971195'
+my_number='+861860075xxxx'
+twilio_number='+1267297aaaa'
 
 def send_sms_myself(content):
     message = client.messages \
