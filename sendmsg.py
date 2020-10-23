@@ -15,13 +15,13 @@ def send_email(msg):
     print("已发送邮件")
 
 
-account_sid='AC905b19fa8e74244a07bcc9ec8f90b86b'
-auth_token='f436aaa51a476c234897497500553719'
+account_sid=''
+auth_token=''
 
 client = Client(account_sid, auth_token)
 
-my_number='+861860075xxxx'
-twilio_number='+1267297aaaa'
+my_number='+86181xxxxxxxx'
+twilio_number='+126xxxxxxxx'
 
 def send_sms_myself(content):
     message = client.messages \
