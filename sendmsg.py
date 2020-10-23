@@ -8,7 +8,7 @@ import yagmail
 from twilio.rest import Client
 
 
-yag = yagmail.SMTP(user='xxx@qq.com', password='ljnvwajcnfajbigi', host='smtp.qq.com', port='465')
+yag = yagmail.SMTP(user='xxx@qq.com', password='password', host='smtp.qq.com', port='465')
 
 def send_email(msg):
     yag.send(to='xxx@live.com', subject='到站咯', contents=[msg])
